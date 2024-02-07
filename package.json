@@ -1,5 +1,5 @@
 {
-  "name": "mern-task-manager",
+  "name": "powwater-task-manager",
   "version": "1.0.0",
   "description": "A MERN application for basic tasks management",
   "main": "index.js",
@@ -10,12 +10,29 @@
     "install-all": "npm install && npm install --prefix frontend && npm install --prefix backend",
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
     "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
-    "start": "cd backend && node app.js"
+    "start": "cd backend && node app.js",
+    "test": "jest"
   },
-  "keywords": ["MERN", "Tasks","Task manager", "Full stack application"],
-  "author": "Aayush",
-  "license": "ISC",
+  "keywords": [
+    "MERN",
+    "Tasks",
+    "Task manager",
+    "Full stack application"
+  ],
+
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+
+  "author": "Bill Munene",
+  "license": "open",
   "devDependencies": {
-    "concurrently": "^7.1.0"
+    "concurrently": "^7.1.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "supertest": "^6.3.4"
   }
 }
