@@ -6,7 +6,11 @@
 
 
  1 npm run install-install
- 2 edit the .env with your database url
+
+
+ 2 edit the .env.example with your database url and save it as .env
+
+
  3  npm run dev
 
 
