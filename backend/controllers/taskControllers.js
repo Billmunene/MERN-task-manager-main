@@ -32,7 +32,7 @@ exports.getTask = async (req, res) => {
   }
   catch (err) {
     console.error(err);
-    return res.status(500).json({ status: false, msg: "Internal Server Error" });
+    return res.status(500).json({ staatus: false, msg: "Internal Server Error" });
   }
 };
 
