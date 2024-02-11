@@ -1,4 +1,4 @@
-t('should respond with a 200 status code when a valid taskId is provided', () => {
+('should respond with a 200 status code when a valid taskId is provided', () => {
 const req = { params: { taskId: 'validTaskId' } };
 const res = { status: jest.fn().mockReturnThis(), send: jest.fn() };
 const next = jest.fn();
